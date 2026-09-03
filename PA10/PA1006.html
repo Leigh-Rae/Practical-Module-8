@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="badgeCanvas" width="600" height="300" style="border: 1px solid black;">
+
+
+    </canvas>
+
+    <script>
+        // This function accepts 3 parameters
+        //1. name
+        //2. role
+        //3 topic
+
+        //it then uses those values to draw a conference badge on the canvas 
+
+        function generateBadge(name, role, topic){
+            //Get the canvas element
+            const canvas = document.getElementById("badgeCanvas")
+            const ctx = canvas.getContext("2d")
+
+
+            ctx.fillStyle="lightblue";
+            ctx.fillRect(50,40,500,220)
+
+            //Draw border
+            ctx.strokStyle= "black"
+            ctx.linewidth= 3
+            ctx.strokeRect(50 , 40 , 500 , 220)
+
+            //Draw conference title
+            ctx.fillStyle = "black"
+            ctx.font ="26px Arial"
+            ctx.fillText("Codetribe Tech Conference", 130, 90)
+
+            //Draw attendee name
+
+            ctx.font="22px Arial"
+            ctx.fillText(
+                "Name :" + name,
+                100,
+                140
+            )
+
+            //Draw attendee role
+
+            ctx.font="22px Arial"
+            ctx.fillText(
+                "Role :" + role,
+                100,
+                180
+            )
+
+            //Draw attendee's topic
+
+            ctx.font="22px Arial"
+            ctx.fillText(
+                "Topic :" + topic,
+                100,
+                220
+            )
+
+        }
+
+        generateBadge("Leigh", "Speaker", "Artificial Inteligence(AI)")
+    </script>
+</body>
+</html>

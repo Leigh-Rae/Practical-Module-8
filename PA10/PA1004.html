@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanva" width="300" , height="100" style="border: 1px solid black;"> </canvas>
+
+    <script>
+        const mycanva = document.getElementById("myCanva")
+        const ctx = mycanva.getContext("2d")
+        
+        //Draw rectangle
+        //Conference name
+
+        ctx.fillStyle = "lightpink"
+         ctx.fillRect(0, 0, 400 , 500);
+
+        ctx.fillStyle="black"
+        ctx.font = "bold 15px Arial";
+        ctx.textAlign = "center";
+        ctx.fillText("GLOBAL TECH SUMMIT 2026", 140, 30);
+        
+        //speaker name
+
+        ctx.fillStyle = "green";
+        ctx.font = "bold 13px Arial";
+        ctx.fillText("Dr. Leigh Booysen", 140, 60);
+
+        //speaker topic
+        ctx.fillStyle = "green";
+        ctx.font = "bold 13px Arial";
+        ctx.fillText("Lead AI Researcher at mLab", 140, 80);
+
+    
+    </script>
+</body>
+</html>

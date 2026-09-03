@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | CodeTribe Conference 2026</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font Awesome -->
+    <script
+        src="https://kit.fontawesome.com/0fc67ac136.js"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&family=Google+Sans:opsz,wght@8..60,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header id="header">
+
+        <div id="logo">
+
+            <h1 id="conference_name">CodeTribe</h1>
+
+            <p>CONFERENCE 2026</p>
+
+        </div>
+
+
+        <nav id="navigation">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="register.html">Register</a>
+
+            <a href="venue.html">Venue</a>
+
+        </nav>
+
+
+        <a href="register.html" class="register_now">
+            Register Now
+        </a>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- Registration Introduction -->
+
+        <section id="register_intro">
+
+            <h2>Register for CodeTribe Conference 2026</h2>
+
+            <p>
+                Secure your place and join developers, innovators,
+                students and technology professionals.
+            </p>
+
+        </section>
+
+
+        <!-- Registration Form -->
+
+        <section id="registration_form">
+
+            <h2>Registration Form</h2>
+
+
+            <article>
+
+                <form onsubmit="return ValidateForm()">
+
+                    <div class="form_group">
+
+                        <label for="firstname">
+                            First Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="firstname"
+                            name="firstname"
+                            placeholder="Enter your first name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="lastname">
+                            Last Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lastname"
+                            name="lastname"
+                            placeholder="Enter your last name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="age">
+                            Age
+                        </label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            min="1"
+                            max="120"
+                            placeholder="Enter your age"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            pattern="[0-9]{10}"
+                            maxlength="10"
+                            placeholder="0831234567"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="organisation">
+                            Organisation
+                        </label>
+
+                        <input
+                            type="text"
+                            id="organisation"
+                            name="organisation"
+                            placeholder="Enter your organisation"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="city">
+                            City
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="Enter your city"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="province">
+                            Province
+                        </label>
+
+                        <select
+                            id="province"
+                            name="province"
+                            required
+                        >
+
+                            <option value="">
+                                Select Province
+                            </option>
+
+                            <option value="Eastern Cape">
+                                Eastern Cape
+                            </option>
+
+                            <option value="Free State">
+                                Free State
+                            </option>
+
+                            <option value="Gauteng">
+                                Gauteng
+                            </option>
+
+                            <option value="KwaZulu-Natal">
+                                KwaZulu-Natal
+                            </option>
+
+                            <option value="Limpopo">
+                                Limpopo
+                            </option>
+
+                            <option value="Mpumalanga">
+                                Mpumalanga
+                            </option>
+
+                            <option value="Northern Cape">
+                                Northern Cape
+                            </option>
+
+                            <option value="North West">
+                                North West
+                            </option>
+
+                            <option value="Western Cape">
+                                Western Cape
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="role">
+                            Role
+                        </label>
+
+                        <select
+                            id="role"
+                            name="role"
+                            required
+                        >
+
+                            <option value="">
+                                Select Role
+                            </option>
+
+                            <option value="Student">
+                                Student
+                            </option>
+
+                            <option value="Developer">
+                                Developer
+                            </option>
+
+                            <option value="Industry Professional">
+                                Industry Professional
+                            </option>
+
+                            <option value="Entrepreneur">
+                                Entrepreneur
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="attendance">
+                            Attendance
+                        </label>
+
+                        <select
+                            id="attendance"
+                            name="attendance"
+                            required
+                        >
+
+                            <option value="">
+                                Select Attendance
+                            </option>
+
+                            <option value="In Person">
+                                In Person
+                            </option>
+
+                            <option value="Virtual">
+                                Virtual
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form_group full_width">
+
+                        <div class="checkbox_group">
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="terms"
+                                required
+                            >
+
+                            <label for="terms">
+                                I agree to the terms and conditions.
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form_group full_width">
+
+                        <button type="submit">
+                            Register
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </article>
+
+        </section>
+
+
+        <!-- Areas of Interest -->
+
+        <section id="areas_interest">
+
+            <h2>Areas of Interest</h2>
+
+            <p>
+                Select the topics you are interested in exploring.
+            </p>
+
+
+            <div class="interest_grid">
+
+                <label class="interest_item">
+
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="Artificial Intelligence">
+                    
+                    Artificial Intelligence
+
+                </label>
+
+
+                <label class="interest_item">
+
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="Cybersecurity">
+
+                    Cybersecurity
+
+                </label>
+
+
+                <label class="interest_item">
+
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="Web Development">
+
+                    Web Development
+
+                </label>
+
+
+                <label class="interest_item">
+
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="Career Development">
+
+                    Career Development
+
+                </label>
+
+
+                <label class="interest_item">
+
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="Networking">
+
+                    Networking
+
+                </label>
+
+
+                <label class="interest_item">
+
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="Entrepreneurship">
+
+                    Entrepreneurship
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- Why Register -->
+
+        <section id="why_register">
+
+            <h2>Why Register?</h2>
+
+
+            <article>
+
+                <p>
+                    Learn about emerging technology trends.
+                </p>
+
+                <p>
+                    Develop practical technical skills.
+                </p>
+
+                <p>
+                    Meet technology professionals.
+                </p>
+
+                <p>
+                    Discover career opportunities.
+                </p>
+
+                <p>
+                    Build your professional network.
+                </p>
+
+                <p>
+                    Become part of the CodeTribe community.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- Complete Registration -->
+
+        <section id="complete_registration">
+
+            <h2>Ready to Join Us?</h2>
+
+            <p>
+                Complete your registration and be part of
+                CodeTribe Conference 2026.
+            </p>
+
+            <a href="#registration_form" class="cta_button">
+                Complete Registration
+            </a>
+
+        </section>
+
+
+        <!-- Registration Success -->
+
+        <section id="registration_successful">
+
+            <h3>Registration Successful!</h3>
+
+            <p>
+                Thank you for registering for CodeTribe Conference 2026.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="footer">
+
+        <div class="footer_column">
+
+            <h3>CodeTribe Conference</h3>
+
+            <p>
+                Connect, Learn, Build, Innovate.
+            </p>
+
+        </div>
+
+
+        <div class="footer_column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="register.html">Register</a>
+                </li>
+
+                <li>
+                    <a href="venue.html">Venue</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer_column">
+
+            <h3>Contact Us</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Kimberley, South Africa
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                info@codetribe.co.za
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +27 83 123 4567
+            </p>
+
+        </div>
+
+
+        <div class="footer_column">
+
+            <h3>Follow Us</h3>
+
+            <p class="footer-icon">
+
+                <i class="fa-brands fa-facebook"></i>
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-square-twitter"></i>
+
+            </p>
+
+        </div>
+
+
+        <p id="copyright">
+            2026 CodeTribe Conference. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

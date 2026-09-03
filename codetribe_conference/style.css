@@ -1,0 +1,1547 @@
+/* =========================
+   HEADER
+========================= */
+.body{
+    font-family: "Google Sans", sans-serif;
+}
+#header {
+  background-color: white;
+  height: 75px;
+  padding: 15px 30px;
+  margin-left: 161px;
+  margin-right: 161px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+}
+
+#logo h1 {
+  font-size: 22px;
+  color: #111827;
+  margin: 0;
+}
+
+#logo p {
+  font-size: 9px;
+  color: #111827;
+  margin: 0;
+  font-weight: bold;
+}
+/*PA0505*/
+#navigation {
+  display: flex;
+  gap: 25px;
+}
+/*PA1101*/
+#navigation a {
+  text-decoration: none;
+  color: #111827;
+  font-size: 12px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+/*PA0503*/
+#navigation a:hover {
+  color: #3155ff; 
+  transform: translateY(-3px);  
+  opacity: 0.7;
+}
+/* PA 0503 AND PA0505 END*/ 
+/*PA0506*/
+.register_now {
+  background: linear-gradient(90deg, #244cff, #7b2cff); /*PA0504-Gradient*/
+  color: white;
+  border: none;
+  border-radius: 6px;  /*PA0504- ROUNDED CORNERS*/
+  padding: 9px 17px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.register_now:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+}
+
+.register_now h4 {
+  margin: 0;
+  font-size: 11px;
+}
+/*PA0506 END*/
+/*PA1101 END*/
+/* =========================
+   FOOTER
+========================= */
+
+#footer {
+  background-color: white;
+  border-top: 1px solid #e5e7eb;
+  padding: 30px;
+  margin-left: 161px;
+  margin-right: 161px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 30px;
+}
+
+.footer_column {
+  width: 23%;
+}
+
+.footer_column h3 {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.footer_column p {
+  font-size: 10px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.footer_column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_column li {
+  margin-bottom: 7px;
+}
+
+.footer_column li a {
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 10px;
+}
+
+.footer_column li a:hover {
+  color: #3155ff;
+}
+
+.footer_column i {
+  color: #3155ff;
+  margin-right: 6px;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icon i {
+  color: #3155ff;
+  font-size: 15px;
+}
+
+#copyright {
+  position: absolute;
+
+  bottom: 5px;
+  left: 0;
+
+  width: 100%;
+
+  text-align: center;
+
+  font-size: 9px;
+  color: #9ca3af;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  background-color: #f7f9fd;
+
+  color: #111827;
+}
+
+#main {
+  max-width: 1200px;
+  font-family: "Google Sans", sans-serif;
+
+  margin: auto;
+}
+
+#introduction {
+  background-color: white;
+
+  padding: 45px 35px;
+
+  min-height: 400px;
+}
+
+.welcome h2 {
+  color: #3155ff;
+
+  font-size: 12px;
+
+  margin-bottom: 10px;
+}
+
+.conference_heading h2 {
+  font-size: 40px;
+
+  color: #111827;
+
+  margin-bottom: 10px;
+}
+
+.introduction_text h2 {
+  color: #00a99d;
+
+  font-size: 17px;
+
+  margin-bottom: 12px;
+}
+
+.introduction_text p {
+  font-size: 12px;
+
+  color: #4b5563;
+
+  line-height: 1.7;
+
+  margin-bottom: 20px;
+}
+
+.conference_details {
+  margin-top: 20px;
+}
+
+.conference_details h2 {
+  font-size: 18px;
+
+  margin-bottom: 12px;
+}
+
+.conference_details p {
+  display: inline-block;
+
+  margin-right: 30px;
+
+  font-size: 11px;
+
+  color: #4b5563;
+}
+
+.main_buttons {
+  margin-top: 25px;
+}
+
+.primary_button {
+  background: linear-gradient(90deg, #244cff, #7b2cff);
+
+  color: white;
+
+  border: none;
+
+  border-radius: 6px;
+
+  padding: 11px 20px;
+
+  margin-right: 8px;
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.secondary_button {
+  background-color: white;
+
+  color: #111827;
+
+  border: 1px solid #d8dce8;
+
+  border-radius: 6px;
+
+  padding: 11px 20px;
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+
+#topics_section {
+  background-color: white;
+
+  padding: 30px;
+}
+
+#topics_section > h2 {
+  text-align: center;
+
+  font-size: 21px;
+
+  margin-bottom: 20px;
+}
+/*PA0501*/
+/*PA1102 AND PA1104*/
+/*PA0502*/
+.topic_card {
+  display: inline-block;
+
+  vertical-align: top;
+
+  width: 20%;
+
+  min-height: 250px;
+
+  margin: 2%;
+
+  padding: 20px 12px;
+
+  background-color: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  animation: cardAppear 0.8s ease forwards;
+}
+/*PA0502 END*/
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*PA1102 & PA1104 END*/
+/*PA0501 END*/
+
+.topic_card h3 {
+  font-size: 13px;
+
+  margin-bottom: 12px;
+}
+
+.topic_card p {
+  font-size: 10px;
+
+  color: #6b7280;
+
+  line-height: 1.6;
+}
+
+#statistics {
+  background-color: white;
+
+  margin-top: 20px;
+
+  padding: 20px;
+
+  display: flex;
+
+  border-top: 1px solid #eeeeee;
+
+  border-bottom: 1px solid #eeeeee;
+}
+/*PA1103*/
+.stat_card {
+  width: 25%;
+
+  text-align: center;
+
+  border-right: 1px solid #e5e7eb;
+
+  transition: transform 0.5s ease;
+
+  animation: statCard3D 1s ease;
+
+}
+
+.stat_card:hover {
+
+  transform: perspective(500px) rotateY(10deg) scale(1.05);
+
+}
+
+@keyframes statCard3D {
+  from {
+    opacity: 0;
+    transform: perspective(500px) rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(500px) rotateY(0deg);
+  }
+}
+/*PA1103 END */
+.stat_card i {
+  font-size: 200px;
+}
+
+.stat_card:last-child {
+  border-right: none;
+}
+
+.stat_card h3 {
+  font-size: 24px;
+
+  color: #111827;
+
+  margin-bottom: 5px;
+}
+
+.stat_card p {
+  font-family: "Google Sans", sans-serif;
+
+  color: black;
+}
+
+#sessions {
+  background-color: white;
+
+  padding: 30px;
+
+  display: flex;
+
+  gap: 15px;
+}
+
+.session_card {
+  width: 33.33%;
+
+  padding: 20px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  background-color: white;
+}
+
+.session_card h4 {
+  font-size: 13px;
+
+  margin-bottom: 10px;
+}
+
+.session_card p {
+  font-size: 10px;
+
+  color: #6b7280;
+
+  line-height: 1.6;
+
+  margin-bottom: 10px;
+}
+
+#future_section {
+  background: linear-gradient(90deg, #244cff, #7b2cff);
+
+  color: white;
+
+  margin: 20px;
+
+  padding: 25px;
+
+  border-radius: 8px;
+}
+
+#future_section h3 {
+  font-size: 18px;
+
+  margin-bottom: 8px;
+}
+
+#future_section p {
+  font-size: 11px;
+
+  margin-bottom: 15px;
+}
+
+.cta_button {
+  background-color: white;
+
+  color: #3155ff;
+
+  border: none;
+
+  border-radius: 6px;
+
+  padding: 10px 18px;
+
+  cursor: pointer;
+
+  font-size: 11px;
+
+  text-decoration: none;
+}
+
+/* 
+   ABOUT
+*/
+.main {
+  margin-left: 161px;
+  margin-right: 161px;
+}
+
+#about_introduction {
+  background-color: white;
+  padding: 45px 35px;
+}
+
+#about_introduction article:first-child {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#about_introduction article:first-child h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#about_introduction article:first-child p {
+  font-size: 12px;
+  color: #3155ff;
+}
+
+#about_introduction article:nth-child(2) {
+  display: inline-block;
+  vertical-align: top;
+  width: 55%;
+  padding: 25px;
+}
+
+#about_introduction article:nth-child(2) h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+#about_introduction article:nth-child(2) p {
+  font-size: 11px;
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+#about_introduction article:nth-child(3) {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  background-color: #f7f9fd;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+#about_introduction article:nth-child(3) h3 {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+#about_introduction article:nth-child(3) p {
+  font-size: 11px;
+  color: #4b5563;
+  margin-bottom: 9px;
+}
+
+#why_attend {
+  background-color: white;
+  padding: 35px;
+}
+
+#why_attend > h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+#why_attend article {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  min-height: 140px;
+  margin: 1%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+#why_attend article h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#why_attend article p {
+  font-size: 10px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+#who_should_attend {
+  background-color: #f7f9fd;
+  padding: 35px;
+}
+
+#who_should_attend > h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+#who_should_attend article {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  min-height: 140px;
+  margin: 1%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+#who_should_attend article h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#who_should_attend article p {
+  font-size: 10px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+#conference_experience {
+  background-color: white;
+  padding: 35px;
+}
+
+#conference_experience > h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+#conference_experience article {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  min-height: 130px;
+  margin: 1%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+#conference_experience article h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#conference_experience article p {
+  font-size: 10px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/*
+   REGISTER
+*/
+
+#register_intro {
+  text-align: center;
+  padding: 50px 30px;
+  background-color: white;
+}
+
+#register_intro h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#register_intro p {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* 
+   REGISTRATION FORM
+ */
+
+#registration_form {
+  background-color: white;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 35px;
+  border-radius: 10px;
+}
+
+#registration_form > h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+#registration_form form p {
+  margin-bottom: 18px;
+}
+
+#registration_form label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#registration_form input,
+#registration_form select {
+  width: 100%;
+  padding: 11px;
+  margin-top: 7px;
+
+  border: 1px solid #d9dce5;
+  border-radius: 6px;
+
+  font-size: 12px;
+}
+
+#registration_form input:focus,
+#registration_form select:focus {
+  outline: none;
+  border-color: #3155ff;
+}
+
+#registration_form form button {
+  background: linear-gradient(90deg, #244cff, #7b2cff);
+
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  padding: 11px 25px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+/*
+   AREAS OF INTEREST
+*/
+
+#areas_interest {
+  background-color: white;
+
+  max-width: 800px;
+
+  margin: 30px auto;
+
+  padding: 35px;
+
+  border-radius: 10px;
+}
+
+#areas_interest h2 {
+  text-align: center;
+
+  font-size: 22px;
+
+  margin-bottom: 25px;
+}
+
+#areas_interest p {
+  margin-bottom: 12px;
+
+  font-size: 12px;
+}
+
+#areas_interest input {
+  margin-right: 8px;
+}
+
+#why_register {
+  background-color: white;
+
+  max-width: 800px;
+
+  margin: 30px auto;
+
+  padding: 35px;
+
+  border-radius: 10px;
+}
+
+#why_register h3 {
+  font-size: 20px;
+
+  margin-bottom: 20px;
+}
+
+#why_register p {
+  font-size: 12px;
+
+  color: #6b7280;
+
+  margin-bottom: 10px;
+}
+
+#complete_registration {
+  background-color: #f0f3ff;
+
+  text-align: center;
+
+  padding: 40px;
+
+  margin-top: 30px;
+}
+
+#complete_registration h3 {
+  font-size: 20px;
+
+  margin-bottom: 10px;
+}
+
+#complete_registration p {
+  font-size: 12px;
+
+  color: #6b7280;
+
+  margin-bottom: 20px;
+}
+
+#complete_registration button {
+  background: linear-gradient(90deg, #244cff, #7b2cff);
+
+  color: white;
+
+  border: none;
+
+  border-radius: 6px;
+
+  padding: 12px 25px;
+
+  cursor: pointer;
+}
+
+#registration_successful {
+  background-color: lightgreen;
+
+  max-width: 800px;
+
+  margin: 30px auto;
+
+  padding: 35px;
+
+  text-align: center;
+
+  border-radius: 10px;
+
+  border: 1px solid #e5e7eb;
+}
+
+#registration_successful h3 {
+  color: green;
+
+  font-size: 20px;
+
+  margin-bottom: 12px;
+}
+
+#registration_successful p {
+  font-size: 12px;
+
+  color: #6b7280;
+
+  margin-bottom: 8px;
+}
+
+/*  
+    VENUE
+*/
+
+#venue_intro {
+  background-color: white;
+  padding: 50px 35px;
+  text-align: center;
+}
+
+#venue_intro article:first-child h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#venue_intro article:first-child p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+#venue_intro article:nth-child(2) {
+  background-color: #f0f3ff;
+  max-width: 700px;
+  margin: 30px auto 0;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+#venue_intro article:nth-child(2) h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#venue_intro article:nth-child(2) p {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+#venue_information {
+  background-color: white;
+  padding: 35px;
+}
+
+#venue_information article {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 45%;
+
+  min-height: 160px;
+
+  margin: 2%;
+
+  padding: 25px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+}
+
+#venue_information article h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+#venue_information article p {
+  font-size: 11px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+#find_venue {
+  background-color: #f0f3ff;
+  padding: 45px;
+  text-align: center;
+}
+
+#find_venue > h2 {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+#find_venue article {
+  background-color: white;
+
+  max-width: 700px;
+
+  margin: auto;
+
+  padding: 30px;
+
+  border-radius: 10px;
+}
+
+#find_venue article h3 {
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+#find_venue article p {
+  font-size: 11px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+#conference_information {
+  background-color: white;
+  padding: 35px;
+  text-align: center;
+}
+
+#conference_information article {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 30%;
+
+  margin: 1%;
+
+  padding: 25px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+}
+
+#conference_information article h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#conference_information article p {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+/*
+   GET DIRECTIONS
+*/
+
+#directions {
+  background-color: white;
+  padding: 45px;
+  text-align: center;
+}
+
+#directions article {
+  max-width: 700px;
+  margin: auto;
+}
+
+#directions h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#directions p {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+#directions button {
+  background: linear-gradient(90deg, #244cff, #7b2cff);
+
+  color: white;
+
+  border: none;
+
+  border-radius: 6px;
+
+  padding: 12px 25px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+#directions button:hover {
+  opacity: 0.9;
+}
+
+
+
+
+/* =========================
+   PA0901 - MEDIA QUERIES
+   ========================= */
+
+/* TABLETS AND SMALLER */
+@media screen and (max-width: 1024px) {
+    #header {
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 15px 20px;
+    }
+
+    #footer {
+        margin-left: 40px;
+        margin-right: 40px;
+        flex-wrap: wrap;
+    }
+
+    .footer_column {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .main {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+/* MOBILE DEVICES */
+@media screen and (max-width: 768px) {
+    /* HEADER */
+    #header {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 15px;
+        flex-direction: column;
+        height: auto;
+        gap: 12px;
+    }
+
+    #logo h1 {
+        font-size: 18px;
+    }
+
+    #navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #navigation a {
+        font-size: 11px;
+    }
+
+    .register_now {
+        padding: 8px 14px;
+    }
+
+    .register_now h4 {
+        font-size: 10px;
+    }
+
+    /* MAIN CONTENT */
+    .main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #main {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    /* INTRODUCTION */
+    #introduction {
+        padding: 25px 15px;
+        min-height: auto;
+    }
+
+    .conference_heading h2 {
+        font-size: 28px;
+    }
+
+    .introduction_text h2 {
+        font-size: 15px;
+    }
+
+    .introduction_text p {
+        font-size: 11px;
+    }
+
+    .conference_details p {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 8px;
+        font-size: 10px;
+    }
+
+    .main_buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .primary_button,
+    .secondary_button {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    /* TOPICS */
+    #topics_section {
+        padding: 20px 10px;
+    }
+
+    #topics_section > h2 {
+        font-size: 18px;
+    }
+
+    .topic_card {
+        display: block;
+        width: 100%;
+        margin: 0 0 15px 0;
+        min-height: auto;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    /* STATISTICS */
+    #statistics {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .stat_card {
+        width: 50%;
+        border-right: none;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .stat_card:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat_card i {
+        font-size: 60px;
+    }
+
+    .stat_card h3 {
+        font-size: 20px;
+    }
+
+    .stat_card p {
+        font-size: 11px;
+    }
+
+    /* SESSIONS */
+    #sessions {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .session_card {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    /* FUTURE SECTION */
+    #future_section {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    #future_section h3 {
+        font-size: 16px;
+    }
+
+    /* ABOUT PAGE */
+    #about_introduction {
+        padding: 20px 15px;
+    }
+
+    #about_introduction article:first-child h2 {
+        font-size: 24px;
+    }
+
+    #about_introduction article:nth-child(2),
+    #about_introduction article:nth-child(3) {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    #why_attend,
+    #who_should_attend,
+    #conference_experience {
+        padding: 20px 10px;
+    }
+
+    #why_attend > h2,
+    #who_should_attend > h2,
+    #conference_experience > h2 {
+        font-size: 18px;
+    }
+
+    #why_attend article,
+    #who_should_attend article,
+    #conference_experience article {
+        display: block;
+        width: 100%;
+        margin: 0 0 12px 0;
+        min-height: auto;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    /* REGISTER PAGE */
+    #register_intro {
+        padding: 25px 15px;
+    }
+
+    #register_intro h2 {
+        font-size: 24px;
+    }
+
+    #registration_form,
+    #areas_interest,
+    #why_register {
+        width: auto;
+        margin: 15px 10px;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+
+    #registration_form > h2,
+    #areas_interest h2 {
+        font-size: 18px;
+    }
+
+    #registration_form input,
+    #registration_form select {
+        padding: 9px;
+        font-size: 11px;
+        box-sizing: border-box;
+    }
+
+    #registration_form label {
+        font-size: 11px;
+    }
+
+    #registration_form form button {
+        width: 100%;
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    #areas_interest p {
+        font-size: 11px;
+    }
+
+    #complete_registration {
+        padding: 25px 15px;
+    }
+
+    #complete_registration h3 {
+        font-size: 18px;
+    }
+
+    #complete_registration button {
+        width: 100%;
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    #registration_successful {
+        margin: 15px 10px;
+        padding: 25px 15px;
+        box-sizing: border-box;
+    }
+
+    #registration_successful h3 {
+        font-size: 18px;
+    }
+
+    /* VENUE PAGE */
+    #venue_intro {
+        padding: 25px 15px;
+    }
+
+    #venue_intro article:first-child h2 {
+        font-size: 24px;
+    }
+
+    #venue_intro article:nth-child(2) {
+        max-width: 100%;
+        margin: 20px auto 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #venue_information {
+        padding: 20px 10px;
+    }
+
+    #venue_information article {
+        display: block;
+        width: 100%;
+        margin: 0 0 12px 0;
+        padding: 20px;
+        box-sizing: border-box;
+        min-height: auto;
+    }
+
+    #find_venue {
+        padding: 25px 15px;
+    }
+
+    #find_venue > h2 {
+        font-size: 20px;
+    }
+
+    #find_venue article {
+        max-width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #conference_information {
+        padding: 20px 10px;
+    }
+
+    #conference_information article {
+        display: block;
+        width: 100%;
+        margin: 0 0 12px 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /* DIRECTIONS */
+    #directions {
+        padding: 25px 15px;
+    }
+
+    #directions article {
+        max-width: 100%;
+    }
+
+    #directions button {
+        width: 100%;
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    /* FOOTER */
+    #footer {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 25px 15px 45px;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    .footer_column {
+        width: 100%;
+    }
+
+    .footer_column h3 {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .footer_column p,
+    .footer_column li a {
+        font-size: 9px;
+    }
+
+    .footer-icon {
+        gap: 12px;
+    }
+
+    .footer-icon i {
+        font-size: 13px;
+    }
+
+    #copyright {
+        position: relative;
+        margin-top: 20px;
+        font-size: 8px;
+        text-align: center;
+        padding-top: 15px;
+        border-top: 1px solid #e5e7eb;
+    }
+}
+
+/* SMALL PHONES */
+@media screen and (max-width: 480px) {
+    #header {
+        padding: 10px;
+    }
+
+    #navigation {
+        gap: 8px;
+    }
+
+    #navigation a {
+        font-size: 10px;
+    }
+
+    .register_now {
+        padding: 6px 12px;
+    }
+
+    .register_now h4 {
+        font-size: 9px;
+    }
+
+    .conference_heading h2 {
+        font-size: 22px;
+    }
+
+    .welcome h2 {
+        font-size: 10px;
+    }
+
+    .introduction_text h2 {
+        font-size: 13px;
+    }
+
+    .stat_card {
+        width: 100%;
+        border-bottom: 1px solid #e5e7eb;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
+
+    .stat_card:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .stat_card i {
+        font-size: 50px;
+    }
+
+    #about_introduction article:first-child h2 {
+        font-size: 20px;
+    }
+
+    #register_intro h2 {
+        font-size: 20px;
+    }
+
+    #registration_form,
+    #areas_interest,
+    #why_register {
+        margin: 10px 5px;
+        padding: 15px 10px;
+    }
+
+    #registration_form input,
+    #registration_form select {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    #venue_intro article:first-child h2 {
+        font-size: 20px;
+    }
+
+    #footer {
+        padding: 20px 10px 40px;
+        gap: 15px;
+    }
+
+    .footer_column h3 {
+        font-size: 11px;
+    }
+}
+
+
+
